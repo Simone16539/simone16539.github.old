@@ -68,6 +68,49 @@
         <li>Sale (per la pasta)</li>
     </ul>    </body>
 </body>
+    head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modulo di Registrazione</title>
+</head>
+<body>
+
+  <h2>Registrazione</h2>
+
+  <form action="/submit_form" method="post">
+    <!-- Campo Indirizzo Email -->
+    <label for="email">Indirizzo Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <!-- Campo Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <br>
+
+    <!-- Checkbox Acconsento al Trattamento dei Dati -->
+    <input type="checkbox" id="consent" name="consent" required>
+    <label for="consent">Acconsento al trattamento dei dati</label>
+
+    <br>
+
+    <!-- Scelta Multipla - Livello di Gradimento -->
+    <label for="gradimento">Livello di Gradimento:</label>
+    <select id="gradimento" name="gradimento" required>
+      <option value="basso">Basso</option>
+      <option value="medio">Medio</option>
+      <option value="alto">Alto</option>
+    </select>
+
+    <br>
+
+    <!-- Pulsante Invia -->
+    <button type="submit">Invia</button>
+  </form>
+
+</body>
 </html>
 
 
